@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* paragraph */
+    --very-light-gray: hsla(0, 0%, 100%, 0.75);
+    /* background, headings, buttons */
+}
+
+/* CSS resets start */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* CSS resets Ends */
+
+main {
+    font-size: 13px;
+    height: 97.5vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Lexend Deca';
+    color: var(--transparent-white);
+    font-weight: 400;
+    margin: 30px;
+}
+
+.card-container {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    flex-basis: 33.33%;
+    padding: 50px;
+}
+
+.card h2 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    color: var(--very-light-gray);
+    font-size: 35px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.card p {
+    line-height: 1.8;
+}
+
+.card .learn {
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-top: 50px;
+    font-weight: 700;
+    background-color: var(--very-light-gray);
+    border: 2px solid;
+}
+
+.card .learn:hover {
+    color: var(--very-light-gray);
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+}
+
+.orangish {
+    background-color: var(--bright-orange);
+}
+
+.orangish .learn {
+    color: var(--bright-orange);
+}
+
+.dark-cyan {
+    background-color: var(--dark-cyan);
+}
+
+.dark-cyan .learn {
+    color: var(--dark-cyan);
+}
+
+.very-dark-cyan {
+    background-color: var(--very-dark-cyan);
+}
+
+.very-dark-cyan .learn {
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
+
