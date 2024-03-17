@@ -57,11 +57,11 @@ h6 {
 
 main {
     font-size: 13px;
-    height: 97.5vh;
+    height: 89vh;
     display: grid;
     place-items: center;
     font-family: 'Lexend Deca';
-    color: var(--transparent-white);
+    color: var(--very-light-gray);
     font-weight: 400;
     margin: 30px;
 }
